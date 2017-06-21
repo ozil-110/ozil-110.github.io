@@ -17,7 +17,7 @@ function receiveIssues(json) {
   };
 }
 
-// thunk action creater
+// 获取issues
  function fetchIssues() {
   return dispatch => {
     dispatch(requestIssues());
@@ -64,15 +64,3 @@ export default {
   fetchIssues,
   fetchIssuesIfNeeded
 }
-
-
-
-
-
-
-
-
-
-
-
-
