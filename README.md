@@ -1,41 +1,73 @@
-# react赛车游戏
+# ozil-110's blog
 
-用react来实现状态的切换，css来实现动画，容易上手。
+这是一个基于 ``github page`` 和 ``github api`` 搭建的单页面静态博客,只在Windows下测试。
 
-## 准备工作
+## 使用
 
-下载react 0.14 版，用browser.min.js转换jsx语法为js，游戏界面:
-游戏容器roadbed，路面road，主角车hero，敌车enemy，还有公里板kilo，失败提示failbub.
+``git clone https://github.com/ozil-110/ozil-110.github.io.git``拉取代码。
 
-## 游戏开始
+## 环境搭建
 
-### 马路移动
+### 运行环境
 
-小车固定在屏幕下方，路面循环向下运动。
-.roadbed{
-    background:url(../resource/road.png) repeat-y;
-    width:480px;
-    height:1600px;
-    position:absolute;
-    left:0;
-    top:-800px;
-}
-.roadRun{
-    -webkit-transform:translateZ(0);
-    -webkit-animation:roadRun 1.2s linear infinite;
-}
-@-webkit-keyframes roadRun{
-    100%{ -webkit-transform:translateY(800px);}
-}
+- [node.js@7.7.0](https://nodejs.org)
+- node.js@6.10.x
 
-### 控制小车移动
+```bash
+$ node -v
+v7.7.0
 
-在componentDidMount方法后通过键盘事件来监听左右方向键，并加上相应的类名。
+### 依赖
 
-### 敌方赛车
- 
-给敌车加上0-1000px的1s的运动，由于速度低于主角车发生碰撞，敌车随机出现，离开屏幕后切换不同的类名来换车。
+- webpack@1.13.2
+- webpack@1.15
 
-### 碰撞
 
-我方小车与敌方小车位于同一车道，且敌方小车的运动距离大于舞台高度-我方小车高度，即两车相撞。通过10ms的刷新频率来判断赛车是否相撞。
+## 命令使用
+
+### 安装
+
+推荐使用cnpm安装 ``npm install -g cnpm --registry=https://registry.npm.taobao.org``。
+``` bash
+$ cd ozil-110.github.io
+$ npm install
+```
+
+### 运行
+
+``` js
+"scripts": {
+  "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline",
+  "build": "cross-env NODE_ENV=production webpack"
+},
+```
+
+#### 命令
+
+``` bash
+// 开发
+$ npm run dev
+
+// 打包
+$ npm run build
+```
+
+## 技术栈
+
+- react
+- react-router
+- redux
+- webpack
+- es6
+- 版本看package.json
+
+## 浏览器兼容
+
+- Chrome
+- 其它浏览器没测过
+
+## 其他
+
+使用webpack抽离出独立的css文件，对js和css进行压缩，抽离出公共的模块，分片打包，按需异步加载js；后面将会推出服务端渲染的版本。
+
+谢谢@cobish。
