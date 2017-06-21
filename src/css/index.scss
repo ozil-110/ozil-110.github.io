@@ -1,0 +1,121 @@
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  color: black;
+  font-size: 14px;
+}
+  
+a:hover {
+  color: #E3CF57;
+  text-decoration: none;
+}
+.nav {
+  position: relative;
+  width: 100%;
+  height: 66px;
+}
+#container {
+  height: 901px;
+}
+#logo {
+  position: absolute;
+  padding: 25px 10px;
+  margin-left:40px;
+}
+
+#logo a {
+  text-decoration: none;
+}
+#linkId {
+  top: 25%;
+  left:8%;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  display: inline-block;
+  margin:0 10px;
+}
+.github {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    background:url("../img/github.png") no-repeat;
+  } 
+.stackoverflow {
+    left:30%;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    background:url("../img/stackoverflow_3.png") no-repeat;
+  } 
+input {
+  height: 20.5px;
+  
+}
+#home {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -99px 0 0 -150px;
+  width: 300px;
+  text-align: center;
+}
+
+#home h1 {
+  margin: 20px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+#home a {
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.avatar {
+  margin: 0 auto;
+  width: 128px;
+  height: 128px;
+  background:
+    url("../img/whale.png");
+}
+
+#home .avatar a {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+
+.back {
+  display: none;
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  right: 50px;
+  bottom: 50px;
+  background: url('../img/backToTop.png');
+  cursor: pointer;
+  &:hover {
+    background-color: #66f9cf;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #logo {
+    padding: 25px 15px;
+  }
+}
+
+@media only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi), only screen and (min-resolution: 2dppx) {
+  a:hover {
+    color: #44a340;
+    //background: none;
+  }
+}
