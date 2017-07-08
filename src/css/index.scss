@@ -43,6 +43,7 @@ a:hover {
 .github {
     width: 28px;
     height: 28px;
+    float: left;
     position: absolute;
     background:url("../img/github.png") no-repeat;
   } 
@@ -50,12 +51,13 @@ a:hover {
     left:30%;
     width: 28px;
     height: 28px;
+    float: left;
     position: absolute;
     background:url("../img/stackoverflow_3.png") no-repeat;
   } 
+
 input {
   height: 20.5px;
-  
 }
 #home {
   position: absolute;
