@@ -59,7 +59,7 @@ $ npm run build
 - redux
 - webpack
 - es6
-- 版本看package.json
+
 
 ## 浏览器兼容
 
