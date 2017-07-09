@@ -14,14 +14,28 @@ a:hover {
   color: #E3CF57;
   text-decoration: none;
 }
+
 .nav {
   position: relative;
   width: 100%;
   height: 66px;
 }
+
+.nav li {
+  margin: 10px 6px;
+  display: inline-block;
+  line-height: 28px;
+  vertical-align: middle;
+}
+
+.nav ul {
+  margin-left: 10px;
+}
+
 #container {
   height: 901px;
 }
+
 #logo {
   position: absolute;
   padding: 25px 10px;
@@ -31,6 +45,7 @@ a:hover {
 #logo a {
   text-decoration: none;
 }
+
 #linkId {
   top: 25%;
   left:8%;
@@ -40,13 +55,15 @@ a:hover {
   display: inline-block;
   margin:0 10px;
 }
+
 .github {
     width: 28px;
     height: 28px;
     float: left;
     position: absolute;
     background:url("../img/github.png") no-repeat;
-  } 
+} 
+
 .stackoverflow {
     left:30%;
     width: 28px;
@@ -54,11 +71,12 @@ a:hover {
     float: left;
     position: absolute;
     background:url("../img/stackoverflow_3.png") no-repeat;
-  } 
+} 
 
 input {
   height: 20.5px;
 }
+
 #home {
   position: absolute;
   left: 50%;
