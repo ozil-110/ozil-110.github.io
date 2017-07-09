@@ -4,10 +4,10 @@ import { Provider } from 'react-redux';
 import {Router,Route,hashHistory} from 'react-router';
 import { createStore } from 'redux';
 import configureStore from './store/configureStore.js';
-import routes from './containers/Root.js';
+import Root from './containers/Root.js';
 
-const initState = window.__INITIAL_STATE__;
-let store = configureStore(initState);
+//const initState = window.__INITIAL_STATE__;
+let store = configureStore();
 
 // let store;
 
@@ -45,9 +45,7 @@ let store = configureStore(initState);
 
 render(
   <Provider store={store}>
-     <Router history={hashHistory}>
-        {routes}
-       </Router>
+    <Root />
   </Provider>,
   document.getElementById('container')
 );
