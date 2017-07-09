@@ -97,9 +97,8 @@ const routes = {
 //  </Route>
 //);
 
-//export default class Root extends Component {
-//  render() {
-//    return <Router history={appHistory} routes={routes} />
-//  }
-//};
-export default routes;
+export default class Root extends Component {
+  render() {
+    return <Router history={appHistory} routes={routes} />
+  }
+};
