@@ -44,6 +44,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <div className="back"></div>
         <div className="nav">
           <div id="logo">
             <a href="#/">ozil-110.github.io</a>
@@ -56,7 +57,6 @@ class App extends Component {
         <div>
           {this.props.children}
         </div>
-        <div className="back"></div>
       </div>
     );
   }
