@@ -1,6 +1,6 @@
 # ozil-110's blog
 
-这是一个基于 ``github page`` 和 ``github api`` 搭建的单页面静态博客,只在Windows下进行了测试。
+这是一个基于 ``github page`` 和 ``github api`` 搭建的单页面静态博客。
 
 ## 使用
 
