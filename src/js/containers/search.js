@@ -9,7 +9,7 @@ class Search extends Component {
     }   
     componentDidMount() {
         const {dispatch} = this.props;
-        dispatch(actions.fetchIssues());
+        dispatch(actions.requestIssues());
     }
     render() { 
          return (
