@@ -11,7 +11,7 @@ class Tags extends Component {
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(actions.fetchIssues());
+    dispatch(actions.requestIssues());
   }
 
   // 标签归档
