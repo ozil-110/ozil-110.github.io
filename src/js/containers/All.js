@@ -7,7 +7,7 @@ import CellView from '../components/CellView.js';
 class All extends Component {
   componentDidMount() {
     const { actions} = this.props;
-    actions.fetchIssues();
+    actions.requestIssues();
   }
 
   render() {
