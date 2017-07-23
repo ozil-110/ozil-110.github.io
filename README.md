@@ -66,9 +66,8 @@ $ npm run build
 - Chrome
 - 其它浏览器没测过
 
-## 其他
+## 更新
 
-   使用webpack抽离出独立的css文件，对js和css进行压缩，抽离出公共的模块，分片打包，按需异步加载js；后面将会推出服务端渲染的版本。
-   [https://github.com/ozil-110/ozil-110_blog](https://github.com/ozil-110/ozil-110_blog)服务端渲染。
+- 服务端渲染[https://github.com/ozil-110/ozil-110_blog](https://github.com/ozil-110/ozil-110_blog).
+- redux-thunk --> redux-observable.
 
-   谢谢@cobish
