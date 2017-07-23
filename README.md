@@ -12,7 +12,7 @@
 
 - [node.js@7.7.0](https://nodejs.org)
 - node.js@6.10.x
-- 推荐使用cnpm安装依赖``npm install -g cnpm --registry=https://registry.npm.taobao.org``,可能因为node版本的原因导致node-sass安装失败，自行搜   索解决方法。
+- 推荐使用cnpm安装依赖``npm install -g cnpm --registry=https://registry.npm.taobao.org``,否则可能因为node版本的原因导致node-sass安装失败，网   上搜索解决方法。
 
 ```bash
 $ node -v
@@ -59,12 +59,13 @@ $ npm run build
 - redux
 - webpack
 - es6
-
+- redux-observable
 
 ## 浏览器兼容
 
 - Chrome
-- 其它浏览器没测过
+- Firefox
+- IE10+
 
 ## 更新
 
