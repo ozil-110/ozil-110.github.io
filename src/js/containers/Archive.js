@@ -11,7 +11,7 @@ class Archive extends Component {
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(actions.fetchIssues());
+    dispatch(actions.requestIssues());
   }
 
   // 时间归档
