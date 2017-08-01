@@ -5,6 +5,7 @@ import {Router,Route,hashHistory} from 'react-router';
 import { createStore } from 'redux';
 import configureStore from './store/configureStore.js';
 import Root from './containers/Root.js';
+import 'babel-polyfill';
 
 //const initState = window.__INITIAL_STATE__;
 let store = configureStore();
