@@ -25,4 +25,4 @@ setTimeout(function() {
         var value = document.querySelector("input").value;
         select(value);
     },false)
-},10)
+},100)
