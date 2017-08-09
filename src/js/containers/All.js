@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component ,PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import { connect } from 'react-redux';
 import  actions from '../actions/index.js';
 import CellView from '../components/CellView.js';
+import BaseComponent from '../components/BaseComponent.js';
 
-class All extends Component {
+class All extends BaseComponent {
   componentDidMount() {
     const { actions} = this.props;
     actions.requestIssues();
@@ -22,6 +23,10 @@ class All extends Component {
     );
   }
 };
+
+All.PropTypes = {
+  isFetching: PropTypes.bool.isRequired
+}
 
 function mapStateToProps(state) {
   const {postIssues} = state;
