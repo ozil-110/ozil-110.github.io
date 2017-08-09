@@ -11,7 +11,6 @@
 ### 运行环境
 
 - [node.js@7.7.0](https://nodejs.org)
-- node.js@6.10.x
 - 推荐使用cnpm安装依赖``npm install -g cnpm --registry=https://registry.npm.taobao.org``,否则可能因为node版本的原因导致node-sass安装失败，网   上搜索解决方法。
 
 ```bash
@@ -20,7 +19,6 @@ v7.7.0
 ```
 ### 依赖
 
-- webpack@1.13.2
 - webpack@1.15
 
 
@@ -71,4 +69,4 @@ $ npm run build
 
 - 服务端渲染[https://github.com/ozil-110/ozil-110_blog](https://github.com/ozil-110/ozil-110_blog).
 - redux-thunk --> redux-observable.
-
+- immutable
