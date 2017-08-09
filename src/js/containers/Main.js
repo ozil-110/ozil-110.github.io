@@ -1,5 +1,5 @@
 if (process.env.NODE_ENV === 'production') {
-    module.export = require('./App.js');
+    module.exports = require('./App.js');
 } else {
     module.exports = require('./App.dev.js');
 }
