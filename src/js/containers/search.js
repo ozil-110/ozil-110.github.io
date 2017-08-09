@@ -12,10 +12,10 @@ class Search extends Component {
         dispatch(actions.requestIssues());
     }
     render() { 
-         return (
+       return(
              <div>
-                 <input type="text"/>
-                 <button id="select">搜索</button>
+                 <input type="text" placeholder="搜索"/>
+                 <label id="select"></label>
                  <CellView items={this.props.items} />
              </div>
          );
