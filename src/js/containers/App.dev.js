@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component ,PropTypes} from 'react';
 import { connect } from 'react-redux';
 import NProgress from 'nprogress';
 import { CONFIG } from '../constants/Config.js';
@@ -43,16 +43,20 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+       <div>
         <div className="back"></div>
         <div className="nav">
-          <div id="logo">
-            <a href="#/">ozil-110.github.io</a>
-          </div>
-          <div id="linkId">
-            <a href="https://github.com/ozil-110" className="github"></a>
-            <a href="https://stackoverflow.com/users/8112580/liulang?tab=profile" className="stackoverflow"></a>
-          </div>
+          <ul>
+            <li>
+              <a href="#/">ozil-110.github.io</a>
+            </li>
+            <li>
+              <a href="https://github.com/ozil-110" className="github"></a>
+            </li>
+            <li>  
+              <a href="https://stackoverflow.com/users/8112580/liulang?tab=profile" className="stackoverflow"></a>
+            </li>
+          </ul>
         </div>
         <div>
           {this.props.children}
@@ -62,6 +66,11 @@ class App extends Component {
     );
   }
 };
+
+App.dev.PropTypes = {
+  isFetching: PropTypes.bool.isRequired,
+  items: PropTypes.array.isRequired
+}
 
 function mapStateToProps(state) {
   const {postIssues} = state;
